@@ -27,5 +27,8 @@ class Settings {
     return map;
   }
 
-  
+  @override
+  String toString() {
+    return 'Settings{Size: $fontSize, Bold: $isBold, Italics: $isItalics}';
+  }
 }
