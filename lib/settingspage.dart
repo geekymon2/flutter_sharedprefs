@@ -54,7 +54,7 @@ class _SettingsPageState extends State<SettingsPage> {
 
   @override
   Widget build(BuildContext context) {
-    debugPrint("[BUILD] - MyHomePage");
+    debugPrint("[BUILD] - Settings Page");
 
     return Scaffold(
       appBar: AppBar(
