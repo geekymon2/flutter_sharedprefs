@@ -22,6 +22,8 @@ class _SettingsPageState extends State<SettingsPage> {
     var settingsString = json.encode(_settings.toJson());
     await preferences.setString(
         Constants.SETTINGS_SHAREDPREF_KEY, settingsString);
+
+    debugPrint("[SAVE PREFS] - $_settings");
   }
 
   Future<void> loadSettingsFromPrefs() async {
@@ -30,15 +32,15 @@ class _SettingsPageState extends State<SettingsPage> {
     var stateString = preferences.getString(Constants.SETTINGS_SHAREDPREF_KEY);
     if (stateString != null) {
       dynamic prefs = json.decode(stateString);
-
       settings = settings.copyWith(
           fontSize: prefs["fontSize"],
           isBold: prefs["isBold"],
           isItalics: prefs["isItalics"]);
+      debugPrint("[LOAD PREFS] - $settings");
     }
 
     setState(() {
-      debugPrint("[SETSTATE] - $settings.toString()");
+      debugPrint("[SETSTATE] - $settings");
       _settings = settings;
       _saveSettings();
     });

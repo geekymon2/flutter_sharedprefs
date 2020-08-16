@@ -1,16 +1,15 @@
-# flutter_sharedprefs
+# Shared Preferences Example
 
-A new Flutter project.
+Flutter Shared Preferences Example
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is an example to showcase Flutter Shared Preferences
 
-A few resources to get you started if this is your first Flutter project:
+## Follow Geeky Mon2
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+[![follow-me](https://github.com/geekymon2/social/blob/master/icons8-facebook-100.png)](https://www.facebook.com/Geeky-Mon2-106714194472450/)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[![follow-me](https://github.com/geekymon2/social/blob/master/icons8-play-button-100.png)](https://www.youtube.com/channel/UCAkvAE25-NRI1SAhRdRH1kw/)
+
+[![follow-me](https://github.com/geekymon2/social/blob/master/icons8-twitter-100.png)](https://twitter.com/Mon217595753/)

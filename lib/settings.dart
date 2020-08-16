@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 @JsonSerializable(nullable: true)
@@ -8,8 +9,11 @@ class Settings {
   final bool isBold;
   final bool isItalics;
 
-  factory Settings.initial() =>
-      Settings(fontSize: 10, isBold: false, isItalics: false);
+  factory Settings.initial() {
+    Settings s = Settings(fontSize: 10, isBold: false, isItalics: false);
+    debugPrint("[INITIAL SETTINGS] - $s");
+    return s;
+  }
 
   Settings copyWith({double fontSize, bool isBold, bool isItalics}) {
     return Settings(
@@ -29,6 +33,6 @@ class Settings {
 
   @override
   String toString() {
-    return 'Settings{Size: $fontSize, Bold: $isBold, Italics: $isItalics}';
+    return 'Settings{FontSize: $fontSize, Bold: $isBold, Italics: $isItalics}';
   }
 }
